@@ -2,6 +2,11 @@ $(document).ready( function(){
 
 	//La variable "recipesArray" esta declarada en el archivo "data/recipes.js"
 	renderHighlightedRecipes(recipesArray);
+	
+	function esconder(){
+	$('.icon-arrow-left-alt').hide();
+	
+}
 
 });
 
@@ -42,4 +47,6 @@ function renderActivity(recipe) {
 	
 }
 
+
+/*funcion para desaparecer flecha del index.html y el icono menu de recipes.html*/
 
