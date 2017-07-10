@@ -9,14 +9,15 @@ $(document).ready( function(){
 	esconder();
 
 	$('.js-show-recipe').click(function(){
-			$('.page').removeClass('make');
+		$('.page').removeClass('make');
+
 		});
 
 	$('.js-show-make').click(function(){
 			$('.page').addClass('make');
 		});
 
-
+	$('.icon-arrow-left-alt')
 
 //imprime hola en la consola cuando el documento html esté listo
 console.log("holaaaaa");
