@@ -4,11 +4,18 @@ $(document).ready( function(){
 	renderHighlightedRecipes(recipesArray);
 	
 	function esconder(){
-	$('.icon-arrow-left-alt').hide();
-	
-}
+	$('.icon-arrow-left-alt-index').hide();
+	}
 
+/*FUNCIÓN QUE ME PERMITE IMPRIMIR NUEVAS RECETAS DENTRO DEL DIV QUE DICE NEWS*/
+	function printNews(){
+		$('.noticias').html("NUEVAS RECETAS");
+	}
+
+	printNews();
+	
 });
+
 
 
 /*
@@ -46,7 +53,4 @@ function renderActivities(activitiesArray) {
 function renderActivity(recipe) {
 	
 }
-
-
-/*funcion para desaparecer flecha del index.html y el icono menu de recipes.html*/
 

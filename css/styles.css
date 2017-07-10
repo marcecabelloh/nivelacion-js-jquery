@@ -2204,3 +2204,12 @@ nav .nav-group.right {
 #admin .btn-primary {
   width: 100%;
 }
+
+/*para lograr borrar icono menu y flecha respectivamente*/
+.icon-arrow-left-alt-index{
+  display: none;
+}
+
+.icon-menu-recipe{
+  display: none;
+}

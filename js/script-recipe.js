@@ -4,7 +4,7 @@ $(document).ready( function(){
 	
 	function esconder(){
 	
-	$('.icon-menu').hide();
+	$('.icon-menu-recipe').hide();
 }
 
 });
