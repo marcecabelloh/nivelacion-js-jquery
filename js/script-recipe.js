@@ -1,4 +1,3 @@
-//está bien enlazado pero aún así no toma la función para esconder el icono menu
 
 $(document).ready( function(){
 	
@@ -6,5 +5,7 @@ $(document).ready( function(){
 	
 	$('.icon-menu-recipe').hide();
 }
+
+esconder();
 
 });

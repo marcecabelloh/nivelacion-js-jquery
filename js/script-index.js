@@ -3,9 +3,12 @@ $(document).ready( function(){
 	//La variable "recipesArray" esta declarada en el archivo "data/recipes.js"
 	renderHighlightedRecipes(recipesArray);
 	
+//funcion que permite esconder la flecha ubicada en el menu dentro del index.html
 	function esconder(){
 	$('.icon-arrow-left-alt-index').hide();
 	}
+
+	esconder();
 
 /*FUNCIÓN QUE ME PERMITE IMPRIMIR NUEVAS RECETAS DENTRO DEL DIV QUE DICE NEWS*/
 	function printNews(){
@@ -23,6 +26,13 @@ $(document).ready( function(){
 * marcado el atributo "highlighted" como TRUE
 */
 function renderHighlightedRecipes(recipesArray) {
+	recipesArray.forEach(function(e){
+//llamo a recipesArray lo recorro  y a través de una condición determino que si este es
+//igual a true lo recorra
+		if(e.highlighted == true){
+			renderRecipe(e)
+		}
+	});
 	console.log('Recipes: ', recipesArray);
 }
 
