@@ -48,13 +48,22 @@ function renderRecipe(recipe) {
 	console.log('Voy a pintar la receta: ', recipe);
 }
 
+//llamé a recipe que es el atributo de mi función al cual le asigné los atributos correspodientes para llamar al nombre, titulo y las imagenes de acuerdo al nombre 
+
 
 
 /*
 * Función que se encarga de pintar todas las actividades
 */
+//no logra ocultar el div 
 function renderActivities(activitiesArray) {
-	console.log('Activities: ', activitiesArray);
+activitiesArray.forEach(function(){
+if(activitiesArray < 0){
+	$('.wrapper-message').hide();
+}
+
+});
+console.log('Activities: ', activitiesArray);
 }
 
 /*
