@@ -18,6 +18,7 @@ $(document).ready( function(){
 	printNews();
 
 	renderActivities(activities);
+
 	
 });
 
@@ -61,13 +62,10 @@ function renderRecipe(recipe) {
 function renderActivities(activities) {
 	
 
-	activities.forEach(function(e){
-		console.log(e);
-
-	});
+	activities.forEach(renderActivity);
 	if(activities.length > 0){
 		$('.wrapper-message').hide();
-		console.log('activities: ', activities);
+		console.log('Activities: ', activities);
 	}
 }
 /*
@@ -76,6 +74,6 @@ function renderActivities(activities) {
 * archivo "templates/templates-activity.html"
 */
 function renderActivity(recipe) {
-	$('.list-activities').append("<a href='#' class= 'item-activity'><span class='attribution'><span class= 'avatar'><img src = '" + $(recipe).attr("userAvatar") + "' class='image-avatar'></span><span class = 'meta'><span class='author'>"+ $(recipe).attr("userName") +"</span> made <span class='recipe'>"+ $(recipe).attr("recipeName") +"</span>: "+ $(recipe).attr("text") +"<span class= 'location'>&mdash;"+ $(recipe).attr("place") +"</span></span></span><div class ='bg-image' style='background-image:url("+ $(recipe).attr("image") + ");'></div></a>");
+	$(".list-activities").append("<a href='#' class= 'item-activity'><span class='attribution'><span class= 'avatar'><img src = '" + $(recipe).attr("userAvatar") + "' class='image-avatar'></span><span class = 'meta'><span class='author'>"+ $(recipe).attr("userName") +"</span> made <span class='recipe'>"+ $(recipe).attr("recipeName") +"</span>: "+ $(recipe).attr("text") +"<span class= 'location'>&mdash;"+ $(recipe).attr("place") +"</span></span></span><div class ='bg-image' style='background-image:url("+ $(recipe).attr("image") + ");'></div></a>");
 }
 
