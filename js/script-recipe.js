@@ -9,12 +9,23 @@ $(document).ready( function(){
 	esconder();
 
 	$('.js-show-recipe').click(function(){
+		//funcion que permite quitar clase make (tome otra clase en este caso page  para poder ejecutarla)
 		$('.page').removeClass('make');
+		//estas funciones me permiten activar y desactivar la clase active cuando apriete un botón u otro
+		$('.js-show-recipe').addClass('active');
+		$('.js-show-make').removeClass('active');
+
 
 		});
 
 	$('.js-show-make').click(function(){
+		//funcion que permite incluir la clase make (use la clase page q estaba junto a make para ejecutarla)
+		//sacar y poner la clase make permite generan el efecto de subir y bajar mostrando la imagen de fondo por completo
+		//y locontrario cuando doy click al los botones correspondientes.
 			$('.page').addClass('make');
+	//estas funciones me permiten activar y desactivar la clase active cuando apriete un botón u otro		
+			$('.js-show-make').addClass('active');
+			$('.js-show-recipe').removeClass('active');
 		});
 
 	//parte 10 funcionalidad de la flecha 
